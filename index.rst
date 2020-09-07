@@ -1,8 +1,6 @@
 .. _index:
 
 .. image:: img/logos.jpg
-    :height: 150px
-    :width: 200px
     :scale: 100%
     :align: center
 
