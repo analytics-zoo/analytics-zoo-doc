@@ -19,20 +19,15 @@ Analytics Zoo seamless scales TensorFlow, Keras and PyTorch to distributed big d
     :scale: 20%
     :align: center
 
-**End-to-end pipeline for applying AI models (TensorFlow, PyTorch, OpenVINO, etc.) to distributed big data**
-
-    * Write [TensorFlow](ProgrammingGuide/TFPark/tensorflow.md) or [PyTorch](ProgrammingGuide/pytorch.md) inline with Spark code for distributed training and inference.
-    * Native deep learning (TensorFlow/Keras/PyTorch/BigDL) support in [Spark ML](ProgrammingGuide/nnframes.md) Pipelines.
-    * Directly run [Ray](ProgrammingGuide/rayonspark.md) programs on big data cluster through _RayOnSpark_. 
-    * Plain Java/Python APIs for (TensorFlow/PyTorch/BigDL/OpenVINO) [Model Inference](ProgrammingGuide/inference.md). 
-**High-level ML workflow for automating machine learning tasks**
-
-    * Cluster Serving for automatically distributed (TensorFlow/PyTorch/Caffe/OpenVINO) model inference . 
-    * Scalable [AutoML](ProgrammingGuide/AutoML/overview.md) for time series prediction.
-
-**Built-in models for**
-
-[Recommendation](APIGuide/Models/recommendation.md), [Time Series](APIGuide/Models/anomaly-detection.md), [Computer Vision](APIGuide/Models/object-detection.md) and [NLP](APIGuide/Models/text-matching.md) applications
+-   **End-to-end pipeline for applying AI models (TensorFlow, PyTorch, OpenVINO, etc.) to distributed big data**
+    + Write [TensorFlow](ProgrammingGuide/TFPark/tensorflow.md) or [PyTorch](ProgrammingGuide/pytorch.md) inline with Spark code for distributed training and inference.
+    + Native deep learning (TensorFlow/Keras/PyTorch/BigDL) support in [Spark ML](ProgrammingGuide/nnframes.md) Pipelines.
+    + Directly run [Ray](ProgrammingGuide/rayonspark.md) programs on big data cluster through _RayOnSpark_. 
+    + Plain Java/Python APIs for (TensorFlow/PyTorch/BigDL/OpenVINO) [Model Inference](ProgrammingGuide/inference.md). 
+-   **High-level ML workflow for automating machine learning tasks**
+    + Cluster Serving for automatically distributed (TensorFlow/PyTorch/Caffe/OpenVINO) model inference . 
+    + Scalable [AutoML](ProgrammingGuide/AutoML/overview.md) for time series prediction.
+-   **Built-in models for** [Recommendation](APIGuide/Models/recommendation.md), [Time Series](APIGuide/Models/anomaly-detection.md), [Computer Vision](APIGuide/Models/object-detection.md) and [NLP](APIGuide/Models/text-matching.md) applications
 
 Why use Analytics Zoo?
 ======================
@@ -44,7 +39,6 @@ You may want to develop your AI solutions using Analytics Zoo if:
 * You want to deploy your AI pipelines to existing YARN or K8S clusters *WITHOUT* any modifications to the clusters.
 * You want to automate the process of applying machine learning (such as feature engineering, hyperparameter tuning, model selection, distributed inference, etc.). 
 
-.. _dsg-how to-use-analytics-aoo?:
 
 How to use Analytics Zoo?
 =========================
