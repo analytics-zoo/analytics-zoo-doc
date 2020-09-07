@@ -11,10 +11,6 @@ What is Analytics Zoo?
 Analytics Zoo seamless scales TensorFlow, Keras and PyTorch to distributed big data (using Spark, Flink & Ray).
 
 .. image:: img/blockdiagram.jpg
-    :height: 150px
-    :width: 200px
-    :scale: 20%
-    :align: center
 
 -   **End-to-end pipeline for applying AI models (TensorFlow, PyTorch, OpenVINO, etc.) to distributed big data**
     - Write [TensorFlow](ProgrammingGuide/TFPark/tensorflow.md) or [PyTorch](ProgrammingGuide/pytorch.md) inline with Spark code for distributed training and inference.
