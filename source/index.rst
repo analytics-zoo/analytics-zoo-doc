@@ -2,11 +2,13 @@
 
 .. image:: Image/logo_s.jpg
 
+Overview
+======================
 
 **A unified Data Analytics and AI platform for distributed TensorFlow, Keras and PyTorch on Apache Spark/Flink & Ray**               
 
 What is Analytics Zoo?
-======================
+---------------------
 
 Analytics Zoo seamless scales TensorFlow, Keras and PyTorch to distributed big data (using Spark, Flink & Ray).
 
@@ -25,7 +27,7 @@ Analytics Zoo seamless scales TensorFlow, Keras and PyTorch to distributed big d
 -   **Built-in models for** [Recommendation](APIGuide/Models/recommendation.md), [Time Series](APIGuide/Models/anomaly-detection.md), [Computer Vision](APIGuide/Models/object-detection.md) and [NLP](APIGuide/Models/text-matching.md) applications
 
 Why use Analytics Zoo?
-======================
+---------------------
 
 You may want to develop your AI solutions using Analytics Zoo if:
 
