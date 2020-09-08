@@ -38,7 +38,7 @@ You may want to develop your AI solutions using Analytics Zoo if:
 
 
 How to use Analytics Zoo?
-=========================
+---------------------
 
 * Check out the [Getting Started page](gettingstarted.md) for a quick overview of how to use Analytics Zoo.
 * Refer to the [Python](PythonUserGuide/install.md), [Scala](ScalaUserGuide/install.md) and [Docker](DockerUserGuide/index.md) guides to install Analytics Zoo.
