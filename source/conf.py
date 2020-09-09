@@ -22,6 +22,15 @@
 #html_theme = "sphinx_rtd_theme"
 #html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 html_theme = "sphinx_book_theme"
+html_theme_options = {
+    "repository_url": "https://github.com/intel-analytics/analytics-zoo",
+    "use_repository_button": True,
+    "use_issues_button": True,
+    "use_edit_page_button": True,
+    "path_to_docs": "doc/source",
+    "home_page_in_toc": True,
+}
+
 # The suffix of source filenames.
 from recommonmark.parser import CommonMarkParser
 source_parsers = {
@@ -52,9 +61,37 @@ release = '0.1'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
+#extensions = [
+ #   'sphinx.ext.autodoc',
+#]
+
 extensions = [
     'sphinx.ext.autodoc',
+    'sphinx.ext.viewcode',
+    'sphinx.ext.napoleon',
+    'sphinx_click.ext',
+    'sphinx_tabs.tabs',
+    'sphinx-jsonschema',
+    'sphinx_gallery.gen_gallery',
+    'sphinxemoji.sphinxemoji',
+    'sphinx_copybutton',
+    'versionwarning.extension',
 ]
+
+versionwarning_admonition_type = "tip"
+
+versionwarning_messages = {
+    "master": (
+        "This document is for the master branch. "
+        'Visit the <a href="/en/latest/">latest pip release documentation here</a>.'
+    ),
+    "latest": (
+        "This document is for the latest pip release. "
+        'Visit the <a href="/en/master/">master branch documentation here</a>.'
+    ),
+}
+
+versionwarning_body_selector = "#main-content"
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
