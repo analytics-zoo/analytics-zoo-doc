@@ -1,3 +1,5 @@
+# Run
+
 You need to first [install](install.md) analytics-zoo, either [from pip](install/#install-from-pip-for-local-usage) or [without pip](install/#install-without-pip).
 
 **NOTE**: We have tested on __Python 3.6__ and __Python 3.7__. Support for Python 2.7 has been removed due to its end of life.
