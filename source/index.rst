@@ -45,3 +45,18 @@ How to use Analytics Zoo?
 * Visit the [Document Website](https://analytics-zoo.github.io/) ([mirror](https://analytics-zoo.gitee.io/) in China) for more information on Analytics Zoo.
 * Check the [Powered By](https://analytics-zoo.github.io/master/#powered-by/) & [Presentations](https://analytics-zoo.github.io/master/#presentations/) pages for real-world applications using Analytics Zoo.
 * Join the [Google Group](https://groups.google.com/forum/#!forum/bigdl-user-group) (or subscribe to the [Mail List](mailto:bigdl-user-group+subscribe@googlegroups.com)) for more questions and discussions on Analytics Zoo.
+
+
+.. toctree::
+   :hidden:
+   :maxdepth: -1
+   :caption: Python User Guide
+
+   PythonUserGuide/install.md
+   PythonUserGuide/run.md
+   PythonUserGuide/examples.md
+   PythonUserGuide/python-faq.md
+   PythonUserGuide/python-lib-version.md
+
+
+    
