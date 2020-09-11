@@ -2,6 +2,8 @@
 
 .. image:: Image/logo_s.jpg
 
+Overview
+======================
 
 **A unified Data Analytics and AI platform for distributed TensorFlow, Keras and PyTorch on Apache Spark/Flink & Ray**               
 
@@ -45,23 +47,6 @@ How to use Analytics Zoo?
 * Join the [Google Group](https://groups.google.com/forum/#!forum/bigdl-user-group) (or subscribe to the [Mail List](mailto:bigdl-user-group+subscribe@googlegroups.com)) for more questions and discussions on Analytics Zoo.
 
 
-.. toctree::
-   :hidden:
-   :maxdepth: -1
-   :caption: Overview
-
-   overview.rst
-
-.. toctree::
-   :hidden:
-   :maxdepth: -1
-   :caption: Python User Guide
-
-   PythonUserGuide/install.md
-   PythonUserGuide/run.md
-   PythonUserGuide/examples.md
-   PythonUserGuide/python-faq.md
-   PythonUserGuide/python-lib-version.md
 
 
     
