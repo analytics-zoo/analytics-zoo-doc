@@ -1,0 +1,204 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>zoo.pipeline.api.torch package &#8212; analytics-zoo  documentation</title>
+    <link rel="stylesheet" href="_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="zoo.pipeline.estimator package" href="zoo.pipeline.estimator.html" />
+    <link rel="prev" title="zoo.pipeline.api.onnx.mapper package" href="zoo.pipeline.api.onnx.mapper.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="zoo.pipeline.estimator.html" title="zoo.pipeline.estimator package"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="zoo.pipeline.api.onnx.mapper.html" title="zoo.pipeline.api.onnx.mapper package"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">analytics-zoo  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="zoo.html" >zoo package</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="zoo.pipeline.html" >zoo.pipeline package</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="zoo.pipeline.api.html" accesskey="U">zoo.pipeline.api package</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">zoo.pipeline.api.torch package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-zoo.pipeline.api.torch.torch_loss">zoo.pipeline.api.torch.torch_loss module</a></li>
+<li><a class="reference internal" href="#module-zoo.pipeline.api.torch.torch_model">zoo.pipeline.api.torch.torch_model module</a></li>
+<li><a class="reference internal" href="#module-zoo.pipeline.api.torch.utils">zoo.pipeline.api.torch.utils module</a></li>
+<li><a class="reference internal" href="#module-zoo.pipeline.api.torch.zoo_pickle_module">zoo.pipeline.api.torch.zoo_pickle_module module</a></li>
+<li><a class="reference internal" href="#module-zoo.pipeline.api.torch">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="zoo.pipeline.api.onnx.mapper.html"
+                        title="previous chapter">zoo.pipeline.api.onnx.mapper package</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="zoo.pipeline.estimator.html"
+                        title="next chapter">zoo.pipeline.estimator package</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/zoo.pipeline.api.torch.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="zoo-pipeline-api-torch-package">
+<h1>zoo.pipeline.api.torch package<a class="headerlink" href="#zoo-pipeline-api-torch-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-zoo.pipeline.api.torch.torch_loss">
+<span id="zoo-pipeline-api-torch-torch-loss-module"></span><h2>zoo.pipeline.api.torch.torch_loss module<a class="headerlink" href="#module-zoo.pipeline.api.torch.torch_loss" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="zoo.pipeline.api.torch.torch_loss.TorchLoss">
+<em class="property">class </em><code class="descclassname">zoo.pipeline.api.torch.torch_loss.</code><code class="descname">TorchLoss</code><span class="sig-paren">(</span><em>criterion_bytes</em>, <em>bigdl_type='float'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/zoo/pipeline/api/torch/torch_loss.html#TorchLoss"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zoo.pipeline.api.torch.torch_loss.TorchLoss" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">bigdl.nn.criterion.Criterion</span></code></p>
+<p>TorchLoss wraps a loss function for distributed inference or training.
+This TorchLoss should be used with TorchModel.</p>
+<dl class="staticmethod">
+<dt id="zoo.pipeline.api.torch.torch_loss.TorchLoss.from_pytorch">
+<em class="property">static </em><code class="descname">from_pytorch</code><span class="sig-paren">(</span><em>criterion</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/zoo/pipeline/api/torch/torch_loss.html#TorchLoss.from_pytorch"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zoo.pipeline.api.torch.torch_loss.TorchLoss.from_pytorch" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-zoo.pipeline.api.torch.torch_model">
+<span id="zoo-pipeline-api-torch-torch-model-module"></span><h2>zoo.pipeline.api.torch.torch_model module<a class="headerlink" href="#module-zoo.pipeline.api.torch.torch_model" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="zoo.pipeline.api.torch.torch_model.TorchModel">
+<em class="property">class </em><code class="descclassname">zoo.pipeline.api.torch.torch_model.</code><code class="descname">TorchModel</code><span class="sig-paren">(</span><em>module_bytes</em>, <em>weights</em>, <em>bigdl_type='float'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/zoo/pipeline/api/torch/torch_model.html#TorchModel"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zoo.pipeline.api.torch.torch_model.TorchModel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">bigdl.nn.layer.Layer</span></code></p>
+<p>TorchModel wraps a PyTorch model as a single layer, thus the PyTorch model can be used for
+distributed inference or training.
+The implement of TorchModel is different from TorchNet, this TorchModel is running running
+pytorch model in an embedding Cpython interpreter, while TorchNet transfer the pytorch model
+to TorchScript and run with libtorch.</p>
+<dl class="staticmethod">
+<dt id="zoo.pipeline.api.torch.torch_model.TorchModel.from_pytorch">
+<em class="property">static </em><code class="descname">from_pytorch</code><span class="sig-paren">(</span><em>model</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/zoo/pipeline/api/torch/torch_model.html#TorchModel.from_pytorch"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zoo.pipeline.api.torch.torch_model.TorchModel.from_pytorch" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a TorchNet directly from PyTorch model, e.g. model in torchvision.models.
+:param model: a PyTorch model</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="zoo.pipeline.api.torch.torch_model.TorchModel.to_pytorch">
+<code class="descname">to_pytorch</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/zoo/pipeline/api/torch/torch_model.html#TorchModel.to_pytorch"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zoo.pipeline.api.torch.torch_model.TorchModel.to_pytorch" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert to pytorch model
+:return: a pytorch model</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-zoo.pipeline.api.torch.utils">
+<span id="zoo-pipeline-api-torch-utils-module"></span><h2>zoo.pipeline.api.torch.utils module<a class="headerlink" href="#module-zoo.pipeline.api.torch.utils" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="zoo.pipeline.api.torch.utils.DistributedSequentialSampler">
+<em class="property">class </em><code class="descclassname">zoo.pipeline.api.torch.utils.</code><code class="descname">DistributedSequentialSampler</code><span class="sig-paren">(</span><em>dataset</em>, <em>num_replicas</em>, <em>rank</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/zoo/pipeline/api/torch/utils.html#DistributedSequentialSampler"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zoo.pipeline.api.torch.utils.DistributedSequentialSampler" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.utils.data.sampler.Sampler</span></code></p>
+<p>A sequential sampler used in FeatureSet when get (train=false) iterator .</p>
+<dl class="method">
+<dt id="zoo.pipeline.api.torch.utils.DistributedSequentialSampler.set_epoch">
+<code class="descname">set_epoch</code><span class="sig-paren">(</span><em>epoch</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/zoo/pipeline/api/torch/utils.html#DistributedSequentialSampler.set_epoch"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zoo.pipeline.api.torch.utils.DistributedSequentialSampler.set_epoch" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="zoo.pipeline.api.torch.utils.trainable_param">
+<code class="descclassname">zoo.pipeline.api.torch.utils.</code><code class="descname">trainable_param</code><span class="sig-paren">(</span><em>model</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/zoo/pipeline/api/torch/utils.html#trainable_param"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zoo.pipeline.api.torch.utils.trainable_param" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-zoo.pipeline.api.torch.zoo_pickle_module">
+<span id="zoo-pipeline-api-torch-zoo-pickle-module-module"></span><h2>zoo.pipeline.api.torch.zoo_pickle_module module<a class="headerlink" href="#module-zoo.pipeline.api.torch.zoo_pickle_module" title="Permalink to this headline">¶</a></h2>
+<p>This module imports contents from CloudPickle in a way that is compatible with the
+<code class="docutils literal notranslate"><span class="pre">pickle_module</span></code> parameter of PyTorch’s model persistence function: <code class="docutils literal notranslate"><span class="pre">torch.save</span></code>
+and <code class="docutils literal notranslate"><span class="pre">torch.load</span></code>.
+TODO: remove this when PyTorch have compatible pickling APIs.</p>
+</div>
+<div class="section" id="module-zoo.pipeline.api.torch">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-zoo.pipeline.api.torch" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="zoo.pipeline.estimator.html" title="zoo.pipeline.estimator package"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="zoo.pipeline.api.onnx.mapper.html" title="zoo.pipeline.api.onnx.mapper package"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">analytics-zoo  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="zoo.html" >zoo package</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="zoo.pipeline.html" >zoo.pipeline package</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="zoo.pipeline.api.html" >zoo.pipeline.api package</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, Intel.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.4.
+    </div>
+  </body>
+</html>

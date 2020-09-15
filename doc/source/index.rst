@@ -64,4 +64,19 @@ How to use Analytics Zoo?
    PythonUserGuide/python-lib-version.md
 
 
-    
+.. toctree::
+   :hidden:
+   :maxdepth: -1
+   :caption: Python API
+
+   zoo.automl
+   zoo.common
+   zoo.examples
+   zoo.feature
+   zoo.models
+   zoo.orca
+   zoo.pipeline
+   zoo.ray
+   zoo.tfpark
+   zoo.zouwu
+   zoo.util    
