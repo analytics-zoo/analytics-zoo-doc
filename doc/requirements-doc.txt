@@ -6,7 +6,7 @@ flatbuffers
 jsonschema
 mock
 bigdl
-tensorflow
+tensorflow==1.15.0
 horovod
 torch
 gym
