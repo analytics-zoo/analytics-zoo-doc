@@ -17,7 +17,6 @@ onnx
 mxnet
 matplotlib
 featuretools
-jep
 nets
 numpy
 pandas
