@@ -12,6 +12,4 @@ dask-image = "^0.3.0"
 toolz = "^0.10.0"
 scikit-image = "^0.17.2"
 Pillow = "^7.1.2"
-bigdl = "^0.11.0"
-horovod = "^0.19.5"
 
