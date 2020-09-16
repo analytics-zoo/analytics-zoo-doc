@@ -2,12 +2,8 @@ click
 colorama
 colorful
 filelock
-flatbuffers
-jsonschema
-mock
-bigdl
 tensorflow==1.15.0
-horovod
+bigdl
 torch
 gym
 ray
@@ -22,15 +18,11 @@ mxnet
 matplotlib
 
 numpy
-opencv-python-headless==4.3.0.36
 pandas
-pickle5
 pillow
-pydantic
 pygments
 pyyaml
 recommonmark
-redis
 
 
 sphinx-click
