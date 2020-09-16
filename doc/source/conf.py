@@ -17,78 +17,7 @@ import sys
 import glob
 import shutil
 import urllib
-sys.path.insert(0, os.path.abspath('.'))
 
-# These lines added to enable Sphinx to work without installing Ray.
-import mock
-
-
-class ChildClassMock(mock.MagicMock):
-    @classmethod
-    def __getattr__(cls, name):
-        return mock.Mock
-
-
-MOCK_MODULES = [
-    "bigdl",
-    "bert",
-    "blist",
-    "ConfigSpace",
-    "gym",
-    "gym.spaces",
-    "horovod",
-    "horovod.ray",
-    "featuretools",
-    "mxnet.model",
-    "psutil",
-    "ray._raylet",
-    "ray[tune]",
-    "ray[rllib]",
-    "onnx",
-    "sklearn",
-    "panda",
-    "nlp_architect",
-    "setproctitle",
-    "scipy.signal",
-    "scipy.stats",
-    "tensorflow_probability",
-    "tensorflow",
-    "tensorflow.contrib",
-    "tensorflow.contrib.all_reduce",
-    "tree",
-    "tensorflow.contrib.all_reduce.python",
-    "tensorflow.contrib.layers",
-    "tensorflow.contrib.rnn",
-    "tensorflow.contrib.slim",
-    "tensorflow.core",
-    "tensorflow.core.util",
-    "tensorflow.keras",
-    "tensorflow.python",
-    "tensorflow.python.client",
-    "tensorflow.python.util",
-    "torch",
-    "torch.distributed",
-    "torch.nn",
-    "torch.nn.parallel",
-    "torch.utils.data",
-    "torch.utils.data.distributed",
-    "wandb",
-    "xgboost",
-    "zoopt",
-]
-#import scipy.stats
-#import scipy.linalg
-
-for mod_name in MOCK_MODULES:
-    sys.modules[mod_name] = mock.Mock()
-# ray.rllib.models.action_dist.py and
-# ray.rllib.models.lstm.py will use tf.VERSION
-sys.modules["tensorflow"].VERSION = "1.15.0"
-#sys.modules["tensorflow.keras.callbacks"] = ChildClassMock()
-#sys.modules["pytorch_lightning"] = ChildClassMock()
-
-# If extensions (or modules to document with autodoc) are in another directory,
-# add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 sys.path.insert(0, os.path.abspath("../../pyzoo/"))
 
