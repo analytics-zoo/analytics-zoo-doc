@@ -1,5 +1,6 @@
-tensorflow==2.0
-bigdl
+tensorflow==1.15.2
+tensorboard==1.15.0
+bigdl==0.11.1
 gym
 torch==1.4.0
 torchvision==0.3.0
@@ -7,7 +8,7 @@ ray==0.8.4
 ray[tune]
 ray[rllib]
 sklearn
-xgboost
+xgboost==1.1.1
 nlp-architect
 bert
 onnx
