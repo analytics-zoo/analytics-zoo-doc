@@ -1,4 +1,4 @@
-tensorflow==1.15.0
+tensorflow==2.0
 bigdl
 gym
 torch==1.4.0
@@ -18,7 +18,7 @@ nets
 numpy
 pandas
 pyyaml
-recommonmark
 tensorflow_gan
 gluonnlp
 horovod==0.19.5
+jep==3.9.0
