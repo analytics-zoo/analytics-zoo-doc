@@ -21,4 +21,3 @@ pyyaml
 tensorflow_gan
 gluonnlp
 horovod==0.19.5
-jep==3.9.0
