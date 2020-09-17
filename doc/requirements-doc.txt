@@ -1,8 +1,9 @@
 tensorflow==1.15.0
 bigdl
-torch
 gym
-ray
+torch==1.4.0
+torchvision==0.3.0
+ray==0.8.4
 ray[tune]
 ray[rllib]
 sklearn
@@ -20,3 +21,4 @@ pyyaml
 recommonmark
 tensorflow_gan
 gluonnlp
+horovod==0.19.5
