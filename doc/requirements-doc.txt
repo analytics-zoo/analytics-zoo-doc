@@ -21,4 +21,3 @@ pandas
 pyyaml
 tensorflow_gan
 gluonnlp
-horovod==0.19.5
