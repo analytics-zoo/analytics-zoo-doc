@@ -1,5 +1,5 @@
 tensorflow==2.1
-tensorboard==1.15.0
+tensorboard==2.1.0
 bigdl==0.11.1
 gym
 torch==1.4.0
