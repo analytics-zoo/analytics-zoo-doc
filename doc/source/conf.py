@@ -83,7 +83,24 @@ extensions += [
     'sphinx_click.ext',
     'sphinx_tabs.tabs',
     'sphinx-jsonschema',
+    'versionwarning.extension',
 ]
+
+versionwarning_admonition_type = "tip"
+
+versionwarning_messages = {
+    "master": (
+        "This document is for the master branch. "
+        'Visit the <a href="/en/latest/">latest pip release documentation here</a>.'
+    ),
+    "latest": (
+        "This document is for the latest pip release. "
+        'Visit the <a href="/en/master/">master branch documentation here</a>.'
+    ),
+}
+
+versionwarning_body_selector = "#main-content"
+
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']

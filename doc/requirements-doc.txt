@@ -23,4 +23,10 @@ numpy==1.16.4
 pandas==1.0.3
 pyyaml
 gluonnlp
-
+sphinx-click
+sphinx-copybutton
+sphinxemoji
+sphinx-gallery
+sphinx-jsonschema
+sphinx-tabs
+sphinx-version-warning
