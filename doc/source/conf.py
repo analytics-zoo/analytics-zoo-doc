@@ -79,14 +79,12 @@ extensions += [
     'sphinx.ext.autodoc',
     'sphinx.ext.viewcode',
     'sphinx.ext.todo',
-    'versionwarning.extension',
     'sphinx_copybutton',
     'sphinx_click.ext',
     'sphinx_tabs.tabs',
     'sphinx-jsonschema',
 ]
 
-versionwarning_admonition_type = "tip"
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
