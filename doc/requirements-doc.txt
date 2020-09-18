@@ -1,4 +1,4 @@
-tensorflow==1.15.2
+tensorflow==2.1
 tensorboard==1.15.0
 bigdl==0.11.1
 gym
@@ -21,3 +21,4 @@ pandas
 pyyaml
 tensorflow_gan
 gluonnlp
+horovod==0.19.5
