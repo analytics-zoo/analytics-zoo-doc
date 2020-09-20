@@ -56,9 +56,10 @@ copyright = '2020, analytice-zoo'
 author = 'analytice-zoo'
 
 # The short X.Y version
-version = ''
+#version = ''
 # The full version, including alpha/beta/rc tags
-release = '0.1'
+from zoo import __version__ as version
+release = version
 
 
 # -- General configuration ---------------------------------------------------
