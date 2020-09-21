@@ -25,3 +25,5 @@ pyyaml
 gluonnlp
 sphinx-copybutton
 sphinx-version-warning
+sphinx-click
+sphinx-jsonschema

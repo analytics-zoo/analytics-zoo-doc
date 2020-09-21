@@ -82,6 +82,8 @@ extensions += [
     'sphinx.ext.todo',
     'sphinx_copybutton',
     'versionwarning.extension',
+    'sphinx_click.ext',
+    'sphinx-jsonschema',
 ]
 
 versionwarning_admonition_type = "tip"
