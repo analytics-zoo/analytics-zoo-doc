@@ -81,9 +81,6 @@ extensions += [
     'sphinx.ext.viewcode',
     'sphinx.ext.todo',
     'sphinx_copybutton',
-    'sphinx_click.ext',
-    'sphinx_tabs.tabs',
-    'sphinx-jsonschema',
     'versionwarning.extension',
 ]
 
