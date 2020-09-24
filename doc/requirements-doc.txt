@@ -13,7 +13,6 @@ ray[rllib]
 ray==0.8.4
 sklearn
 xgboost==1.1.1
-bert==2.2.0
 onnx==1.6.0
 mxnet==1.6.0
 matplotlib
@@ -27,3 +26,4 @@ sphinx-copybutton
 sphinx-version-warning
 sphinx-click
 sphinx-jsonschema
+git+https://github.com/google-research/bert.git@master
