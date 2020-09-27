@@ -26,4 +26,4 @@ sphinx-copybutton
 sphinx-version-warning
 sphinx-click
 sphinx-jsonschema
-git+https://github.com/google-research/bert.git@master
+bert-tensorflow==1.0.0
