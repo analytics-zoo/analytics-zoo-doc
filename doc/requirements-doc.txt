@@ -27,4 +27,4 @@ sphinx-version-warning
 sphinx-click
 sphinx-jsonschema
 bert-tensorflow==1.0.0
-jep==3.9.0
+jep-3.9.0-cp37-cp37m-linux_x86_64.whl
