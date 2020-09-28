@@ -50,7 +50,7 @@ How to use Analytics Zoo?
    :maxdepth: -1
    :caption: Overview
 
-   overview.rst
+   overview.md
 
 .. toctree::
    :hidden:
