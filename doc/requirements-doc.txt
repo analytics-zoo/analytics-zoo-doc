@@ -27,4 +27,3 @@ sphinx-version-warning
 sphinx-click
 sphinx-jsonschema
 bert-tensorflow==1.0.0
-jep==3.9.0
