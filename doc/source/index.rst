@@ -20,8 +20,7 @@ Analytics Zoo seamless scales TensorFlow, Keras and PyTorch to distributed big d
     * Plain Java/Python APIs for (TensorFlow/PyTorch/BigDL/OpenVINO) `Model Inference <https://analytics-zoo.github.io/master/#ProgrammingGuide/inference/>`_. 
 -   **High-level ML workflow for automating machine learning tasks**
 
-    * `Cluster Serving <https://analytics-zoo.github.io/master/#ClusterServingGuide/ProgrammingGuide/
->`_ for automatically distributed (TensorFlow/PyTorch/Caffe/OpenVINO) model inference . 
+    * `Cluster Serving <https://analytics-zoo.github.io/master/#ClusterServingGuide/ProgrammingGuide/>`_ for automatically distributed (TensorFlow/PyTorch/Caffe/OpenVINO) model inference . 
     * Scalable `AutoML <https://analytics-zoo.github.io/master/#ProgrammingGuide/AutoML/overview/>`_ for time series prediction.
 -   **Built-in models for** `Recommendation <https://analytics-zoo.github.io/master/#APIGuide/Models/recommendation/>`_, `Time Series <https://analytics-zoo.github.io/master/#APIGuide/Models/anomaly-detection/>`_, `Computer Vision <https://analytics-zoo.github.io/master/#APIGuide/Models/object-detection/>`_ and `NLP <https://analytics-zoo.github.io/master/#APIGuide/Models/text-matching/>`_ applications
 
