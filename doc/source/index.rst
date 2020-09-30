@@ -55,18 +55,6 @@ How to use Analytics Zoo?
 .. toctree::
    :hidden:
    :maxdepth: -1
-   :caption: Python User Guide
-
-   PythonUserGuide/install.md
-   PythonUserGuide/run.md
-   PythonUserGuide/examples.md
-   PythonUserGuide/python-faq.md
-   PythonUserGuide/python-lib-version.md
-
-
-.. toctree::
-   :hidden:
-   :maxdepth: -1
    :caption: Python API
 
    zoo.automl
