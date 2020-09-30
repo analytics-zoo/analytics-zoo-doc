@@ -59,7 +59,6 @@ How to use Analytics Zoo?
 
    zoo.automl
    zoo.common
-   zoo.examples
    zoo.feature
    zoo.models
    zoo.orca
