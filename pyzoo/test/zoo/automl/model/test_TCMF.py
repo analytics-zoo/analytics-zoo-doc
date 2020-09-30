@@ -17,7 +17,7 @@
 import pytest
 
 from test.zoo.pipeline.utils.test_utils import ZooTestCase
-from zoo.automl.model import TCMF
+from zoo.automl.model.tcmf_model import TCMF
 import numpy as np
 import os
 from numpy.testing import assert_array_almost_equal
@@ -29,7 +29,7 @@ class TestTCMF(ZooTestCase):
         seq_len = 480
         self.num_samples = 300
         self.config = {
-            "max_y_iterations": 1,
+            "y_iters": 1,
             "init_FX_epoch": 1,
             "max_FX_epoch": 1,
             "max_TCN_epoch": 1,
