@@ -1,3 +1,4 @@
+scikit-learn==0.20.2
 nlp-architect==0.5.4
 tensorflow==1.15.2
 tensorboard==1.15.0
@@ -11,7 +12,6 @@ torchvision==0.3.0
 ray[tune]
 ray[rllib]
 ray==0.8.4
-scikit-learn==0.22.0
 xgboost==1.1.1
 onnx==1.6.0
 mxnet==1.6.0
