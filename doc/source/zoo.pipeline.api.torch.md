@@ -1,4 +1,4 @@
-## Net
+## zoo.pipeline.api.torch package
 
 ### Load Analytics Zoo Model
 
