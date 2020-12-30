@@ -12,6 +12,7 @@ Analytics Zoo includes the *Orca* library that seamlessly scales single-node Pyt
     * `Keras 2.3 <https://github.com/intel-analytics/analytics-zoo/blob/master/docs/docs/Orca/orca-keras-quickstart.md>`_ 
     * `PyTroch <https://github.com/intel-analytics/analytics-zoo/blob/master/docs/docs/Orca/orca-pytorch-quickstart.md>`_ 
     * `TensorFlow 2 and Keras 2.4 <https://analytics-zoo.github.io/master/>`_
+    * `MXNet <https://analytics-zoo.github.io/master/>`_
     * `Horovod <https://analytics-zoo.github.io/master/>`_ 
 -   **User guide**
 
@@ -34,7 +35,7 @@ Analytics Zoo includes the *Orca* library that seamlessly scales single-node Pyt
    :maxdepth: -1
    :caption: Overview
 
-   Orca/index.md
+   readthedocs/index.md
 
 .. toctree::
    :hidden:
