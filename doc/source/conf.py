@@ -19,11 +19,9 @@ import shutil
 import urllib
 
 # documentation root, use os.path.abspath to make it absolute, like shown here.
-sys.path.insert(0, '.')
+#sys.path.insert(0, '.')
+sys.path.insert(0, os.path.abspath('.'))
 sys.path.insert(0, os.path.abspath("../../pyzoo/"))
-
-
-
 
 
 # -- Project information -----------------------------------------------------
@@ -50,6 +48,7 @@ source_suffix = ['.rst', '.md']
 source_parsers = {
     '.md': CommonMarkParser,
 }
+master_doc = 'index'
 
 project = 'analytics-zoo'
 copyright = '2020, analytice-zoo'
@@ -58,8 +57,8 @@ author = 'analytice-zoo'
 # The short X.Y version
 #version = ''
 # The full version, including alpha/beta/rc tags
-from zoo import __version__ as version
-release = version
+#from zoo import __version__ as version
+#release = version
 
 
 # -- General configuration ---------------------------------------------------
@@ -74,32 +73,16 @@ release = version
 #extensions = [
  #   'sphinx.ext.autodoc',
 #]
-
-extensions = ['sphinx.ext.autodoc', 'sphinx.ext.mathjax', 'analytics_zoo_pytext']
-extensions += [
+extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.viewcode',
-    'sphinx.ext.todo',
-    'sphinx_copybutton',
-    'versionwarning.extension',
     'sphinx_click.ext',
     'sphinx-jsonschema',
+    'sphinx.ext.napoleon',
+    'sphinxemoji.sphinxemoji',
+    'sphinx_copybutton',
+    'sphinx.ext.mathjax',
 ]
-
-versionwarning_admonition_type = "tip"
-
-versionwarning_messages = {
-    "master": (
-        "This document is for the master branch. "
-        'Visit the <a href="/en/latest/">latest pip release documentation here</a>.'
-    ),
-    "latest": (
-        "This document is for the latest pip release. "
-        'Visit the <a href="/en/master/">master branch documentation here</a>.'
-    ),
-}
-
-versionwarning_body_selector = "#main-content"
 
 
 # Add any paths that contain templates here, relative to this directory.
@@ -107,9 +90,14 @@ templates_path = ['_templates']
 
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
-#
-# source_suffix = ['.rst', '.md']
-#source_suffix = '.rst'
+from recommonmark.parser import CommonMarkParser
+
+# The suffix of source filenames.
+source_suffix = ['.rst', '.md']
+
+source_parsers = {
+    '.md': CommonMarkParser,
+}
 
 # The master toctree document.
 master_doc = 'index'
@@ -125,10 +113,13 @@ language = None
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
 
-exclude_patterns = []
+#exclude_patterns = []
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
+
+exclude_patterns = ['_build']
+#todo_include_todos = False
 
 
 # -- Options for HTML output -------------------------------------------------
@@ -233,6 +224,3 @@ epub_title = project
 
 # A list of files that should not be packed into the epub file.
 epub_exclude_files = ['search.html']
-
-
-# -- Extension configuration -------------------------------------------------
