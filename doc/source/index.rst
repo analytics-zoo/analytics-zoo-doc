@@ -45,5 +45,5 @@ Analytics Zoo includes the **Orca** library that seamlessly scale out your singl
    :maxdepth: 1
    :caption: API reference
    
-   readthedocs/API/api.md
+   readthedocs/api/api.md
    
