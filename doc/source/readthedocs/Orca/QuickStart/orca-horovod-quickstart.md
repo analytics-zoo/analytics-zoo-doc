@@ -1,4 +1,4 @@
-# Horovod QuickStart
+# Horovod Quickstart
 ---------------------
 
 
