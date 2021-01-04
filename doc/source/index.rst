@@ -39,7 +39,7 @@ Analytics Zoo includes the **Orca** library that seamlessly scale out your singl
    readthedocs/UserGuide/amazon.md
    readthedocs/UserGuide/databricks.md
    readthedocs/UserGuide/scala.md
-   readthedocs/UserGuide/develop.md
+   ..readthedocs/UserGuide/develop.md
    
 .. toctree::
    :maxdepth: 1
