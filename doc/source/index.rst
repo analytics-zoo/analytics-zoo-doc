@@ -24,8 +24,8 @@ Analytics Zoo includes the **Orca** library that seamlessly scale out your singl
    readthedocs/Orca/QuickStart/orca-keras-quickstart.md
    readthedocs/Orca/QuickStart/orca-pytorch-quickstart.md
    readthedocs/Orca/QuickStart/orca-tf2keras-quickstart.md
-  .. readthedocs/Orca/QuickStart/orca-mxnet-quickstart.md
-  .. readthedocs/Orca/QuickStart/orca-horovod-quickstart.md
+   readthedocs/Orca/QuickStart/orca-mxnet-quickstart.md
+   readthedocs/Orca/QuickStart/orca-horovod-quickstart.md
 
 .. toctree::
    :maxdepth: 1
