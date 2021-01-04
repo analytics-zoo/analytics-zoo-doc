@@ -1,3 +1,6 @@
+Analytics-Zoo Documentation
+===========================
+
 Analytics Zoo is an open source Big Data AI platform (for distributed TensorFlow, PyTorch and keras on Apache Spark & Ray).
 
 --------
