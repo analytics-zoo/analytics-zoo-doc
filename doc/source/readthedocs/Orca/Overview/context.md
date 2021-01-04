@@ -1,39 +1,68 @@
 ## Orca Context
 
-**`OrcaContext` is the main entry for provisioning the Orca program on the underlying cluster (such as K8s or Hadoop cluster), or even on a single laptop.**
+### **Initialization and Termination**
+As a starting point of [Project Orca](overview.md), you need to call `init_orca_context` to create or get a SparkContext for your Spark cluster (and launch Ray services
+across the cluster if necessary). When your application finishes, you need to call `stop_orca_context` to stop the SparkContext (and stop Ray services across the cluster if necessary).
 
-### **1. Initialization**
-An Orca program usually starts with the initialization of `OrcaContext` as follows:
+```python
+from zoo.orca import init_orca_context, stop_orca_context
 
+# At the very beginning:
+sc = init_orca_context(cluster_mode="local", cores=2, memory="2g", num_nodes=1,
+                       init_ray_on_spark=False, **kwargs)
+
+# Your application goes after init_orca_context.
+
+# When your application finishes:
+stop_orca_context()
 ```
-from zoo.orca import init_orca_context
-init_orca_context(...)
+
+**Arguments for** `init_orca_context`:
+
+* `cluster_mode`: The mode for the Spark cluster. One of "local", "yarn-client", "k8s-client", "standalone" and "spark-submit". Default to be "local". 
+
+For "spark-submit", you are supposed to use spark-submit to submit the application. In this case, please set the Spark configurations through command line options or
+the properties file. You need to use "spark-submit" for yarn-cluster or k8s-cluster mode. To make things easier, you are recommended to use the 
+launch [scripts](https://github.com/intel-analytics/analytics-zoo/tree/master/scripts) we provide.
+
+For other cluster modes, you are recommended to install and run analytics-zoo through pip, which is more convenient.
+
+* `cores`: The number of cores to be used on each node. Default to be 2.
+* `memory`: The memory allocated for each node. Default to be '2g'.
+* `num_nodes`: The number of nodes to be used in the cluster. Default to be 1. For Spark local, num_nodes should always be 1 and you don't need to change it.
+* `init_ray_on_spark`: Whether to launch Ray services across the cluster. Default to be False and in this case the Ray cluster would be launched lazily when Ray is involved in Project Orca.
+* `kwargs`: The extra keyword arguments used for creating SparkContext and launching Ray if any.
+
+
+---
+### **Extra Configurations**
+Users can make extra configurations when using the functionalities of Project Orca via `OrcaContext`.
+
+Import OrcaContext using `from from zoo.orca import OrcaContext` and then you can choose to modify the following options:
+
+* log_output
+```python
+OrcaContext.log_output = False  # Default
+OrcaContext.log_output = True
 ```
-In `init_orca_context`, the user may specify necessary runtime configurations for the program, including:
-- *Cluster mode*: <TODO: explain computing environment supported>
-- *Physical resource*: <TODO: explain common resources, e.g., node, core, memory, driver memory, etc.>
+Whether to redirect Spark driver JVM's stdout and stderr to the current python process. 
+This is useful when running Analytics Zoo in jupyter notebook.
+Default to be False. Needs to be set before initializing SparkContext.
 
-The Orca program simply runs `init_orca_context` on the local machine, which will automatically provision the runtime Python environment and distributed execution engine on the underlying computing environment (such as a single laptop, a large K8s or Hadoop cluster, etc.). <TODO: Add a architecture chart?>
+* pandas_read_backend
+```python
+OrcaContext.pandas_read_backend = "spark"  # Default
+OrcaContext.pandas_read_backend = "pandas"
+```
+The backend for reading csv/json files. Either "spark" or "pandas". 
+"spark" backend would call `spark.read` and "pandas" backend would call `pandas.read`. 
+Default to be "spark".
 
-View the related [Python API doc]() for more details.
-
-### **2. Python Dependency**
-A key challenge for scaling out Python program across a distributed cluster is how to properly install the required Python environment (libraries and dependencies) on each node in the cluster (preferably in an automatic and dynamic fashion). 
-
-For K8s cluster, the user may install required Python packages in the container and specify the `container_image` argument when initializing `OrcaContext`. For Hadoop/YARN cluster, the user may use `conda` to create the Python virtual environment with required dependencies on the local machine, and `OrcaContext` will automatically detect the active `conda` environment and provision it on each node in the cluster.
-
-View the user guide for [K8s]() and [Hadoop/YARN]() for more details.
-
-### **3. Execution Engine**
-
-Under the hood, `OrcaContext` will automatically provision Apache Spark and/or Ray as the underlying execution engine for the distributed data processing and model training/inference. <TODO: explain how the user can retrieve `SparkContext` and `RayContext`; we may also add these two as member variables of `OrcaContext`, and user can call `OrcaContext.get_spark_context()` and `OrcaContext.get_ray_context()`?>
-
-### **4. Extra Configurations**
- <TODO: explain the following configurations>
-
- - log_output: shall we always set it to true?
- - pandas_read_backend: we may describe it in xShards?
- - serialize_data_creation: shall we always set it to true?
-
-### **5. Stopping**
-After the Orca program finishes, the user can call `stop_orca_context` to release resources and shut down the underlying Spark and/Ray execution engine.
+* serialize_data_creation
+```python
+OrcaContext.serialize_data_creation = False  # Default
+OrcaContext.serialize_data_creation = True
+```
+Whether add a file lock to the data loading process for PyTorch Horovod training. 
+This would be useful when you run multiple workers on a single node to download data to the same destination. 
+Default to be False.
