@@ -7,7 +7,7 @@ Analytics Zoo includes the **Orca** library that seamlessly scale out your singl
 
 .. toctree::
    :maxdepth: 1
-   :caption: Overview
+   :caption: Index
 
    readthedocs/index.md
 
