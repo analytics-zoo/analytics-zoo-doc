@@ -1,2 +1,2 @@
-# Horovod QuickStart
-"""""""""""""""""""""
+Horovod QuickStart
+"""""""""""""""""""
