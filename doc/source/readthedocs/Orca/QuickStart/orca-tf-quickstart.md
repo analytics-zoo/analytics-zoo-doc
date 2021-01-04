@@ -1,8 +1,8 @@
-## how to scale out TensorFlow (v1.15) programs using Orca
+## **How to scale out TensorFlow (v1.15) programs using Orca**
 
 **In this guide we will describe how to scale out TensorFlow (v1.15) programs using Orca in 4 simple steps.**
 
-### **Step 0: Prepare Environment**
+### Step 0: Prepare Environment
 
 We recommend using [Conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/) to prepare the environment. Please refer to the [install guide](../PythonUserGuide/install/) for more details.
 
@@ -18,7 +18,7 @@ pip install psutil
 ```
 **Note:** The original [source code](https://github.com/intel-analytics/analytics-zoo/blob/master/pyzoo/zoo/examples/orca/learn/tf/lenet/lenet_mnist_graph.py) for the tutorial below only supports TensorFlow 1.15.
 
-### **Step 1: Init Orca Context**
+### Step 1: Init Orca Context
 ```python
 if args.cluster_mode == "local":  
     init_orca_context(cluster_mode="local", cores=4)# run in local mode
@@ -30,7 +30,7 @@ elif args.cluster_mode == "yarn":
 
 This is the only place where you need to specify local or distributed mode. View [Orca Context](./context) for more details.
 
-### **Step 2: Define the Model**
+### Step 2: Define the Model
 
 You may define your model, loss and metrics in the same way as in any standard (single node) TensorFlow program.
 
@@ -62,7 +62,7 @@ logits = lenet(images)
 loss = tf.reduce_mean(tf.losses.sparse_softmax_cross_entropy(logits=logits, labels=labels))
 acc = accuracy(logits, labels)
 ```
-### **Step 3: Define Train Dataset**
+### Step 3: Define Train Dataset
 
 You can define the dataset using standard [tf.data.Dataset](https://www.tensorflow.org/api_docs/python/tf/data/Dataset). Orca also supports [Spark DataFrame](https://spark.apache.org/docs/latest/sql-programming-guide.html) and [Orca XShards](./data).
 
@@ -81,7 +81,7 @@ mnist_train = mnist_train.map(preprocess)
 mnist_test = mnist_test.map(preprocess)
 ```
 
-### **Step 4: Fit with Orca Estimator**
+### Step 4: Fit with Orca Estimator
 
 First, create an Estimator.
 
