@@ -1,4 +1,4 @@
-## TensorFlow 1.15
+## how to scale out TensorFlow (v1.15) programs using Orca
 
 **In this guide we will describe how to scale out TensorFlow (v1.15) programs using Orca in 4 simple steps.**
 
