@@ -1,4 +1,6 @@
-## Keras 2.3
+# Keras 2.3 Quickstart
+
+---
 
 **In this guide we will describe how to scale out Keras (v2.3) programs using Orca in 4 simple steps.**
 
@@ -31,6 +33,8 @@ elif args.cluster_mode == "yarn":
 ```
 
 This is the only place where you need to specify local or distributed mode. View [Orca Context](./context) for more details.
+
+**Note:** You should `export HADOOP_CONF_DIR=/path/to/hadoop/conf/dir` when you run on Hadoop YARN cluster.
 
 ### **Step 2: Define the Model**
 
