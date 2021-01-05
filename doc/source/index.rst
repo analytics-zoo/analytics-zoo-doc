@@ -1,4 +1,4 @@
-Analytics-Zoo Documentation
+ANALYTICS ZOO DOCUMENTATION
 ===========================
 
 ------
