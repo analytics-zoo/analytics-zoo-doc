@@ -1,2 +1,0 @@
-# Amazon EMR guide
----
